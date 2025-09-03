@@ -1,5 +1,17 @@
 {
+  "name": "practicas-openai",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/openai.ts",
+    "start": "bun run src/openai.ts",
+    "build": "bun build src/openai.ts --outdir dist"
+  },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "openai": "^5.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
   }
 }
