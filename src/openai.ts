@@ -8,10 +8,10 @@ if (!geminiApiKey) {
 
 export const genAI = new GoogleGenerativeAI(geminiApiKey);
 
-async function prueba() {
+export async function prueba() {
     const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"});
 
-    const prompt = "Hola, puedes resumirme que es bun?";
+    const prompt = "Hola, puedes resumirme que es bun?, en el campo de la programacion";
 
     const result = await model.generateContent(prompt);
     const response = await result.response;
